@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Content</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn {
+            background-color: transparent !important;
+            border: none !important;
+            text-decoration: none;
+            cursor: pointer;
+            color: blue !important;
+        }
+
+        .active-btn {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Button 1 -->
+            <button class="btn btn-primary" onclick="displayContent('Button 1 Content', 'button1')" id="button1">Button 1</button>
+            
+            <!-- Button 2 -->
+            <button class="btn btn-primary" onclick="displayContent('Button 2 Content', 'button2')" id="button2">Button 2</button>
+        </div>
+        <div class="col-md-6">
+            <!-- Content Display Div -->
+            <div id="contentDisplay" class="mt-3">Button 1 Content</div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap components to work) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+    let currentButton = "button1";
+
+    function displayContent(content, button) {
+        const contentDisplay = document.getElementById("contentDisplay");
+        const button1 = document.getElementById("button1");
+        const button2 = document.getElementById("button2");
+
+        if (currentButton === button) {
+            // If the same button is clicked again, display default content
+            contentDisplay.innerHTML = "Button " + button.charAt(button.length - 1) + " Content";
+        } else {
+            // Display content of the clicked button
+            contentDisplay.innerHTML = content;
+
+            // Add underline to the active button
+            document.getElementById(currentButton).classList.remove("active-btn");
+            document.getElementById(button).classList.add("active-btn");
+
+            currentButton = button;
+        }
+    }
+</script>
+
+</body>
+</html>
