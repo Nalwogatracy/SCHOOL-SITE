@@ -8,25 +8,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
+    <style>
+        .head{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
     <div class="row">
         <div class=""></div>
         <div class="col-2 bg-primary px-5">
-            <img src="logo1.png" alt="" style="width: 150px; height: 150px;">
+            <img src="logo1.png" alt="" style="width: 150px; height: 130px;">
         </div>
-        <div class="col bg-primary text-light py-5">
-            <h1><b>St.Bensdorf High School</b></h1>
+        <div class="col bg-primary text-light py-5 head">
+            <h2><b>St.Bensdorf High School</b></h2>
         </div>
         <div class="col bg-primary"></div>
     </div>
+    <style>
+        .navs:hover{
+            background-color: azure;
+        }    
+        </style>
     <nav class="navbar navbar-expand bg-primary">
         <div class="nav-item">
             <ul class="navbar-nav ">
-                <li class="nav-link "><a href="index.html"><p class="text-warning h4 px-3">Home</p></a></li>
-                <li class="nav-link "><a href="academics.html"><p class="text-warning h4 px-3">Academics</p></a></li>
-                <li class="nav-link "><a href="gallery.html"><p class="text-warning h4 px-3">Gallery</p></a></li>
-                <li class="nav-link "><a href="curricula.html"><p class="text-warning h4 px-3">Co-curricular Activities</p></a></li>
-                <li class="nav-link "><a href="about.html"><p class="text-warning h4 px-3">About</p></a></li>
-                <li class="nav-link "><a href="contacts.html"><p class="text-warning h4">Contacts</p></a></li>
+                <li class="nav-link "><a href="index.html"><p class="text-warning h5 px-3 navs">Home</p></a></li>
+                <li class="nav-link "><a href="academics.html"><p class="text-warning h5 px-3 navs">Academics</p></a></li>
+                <li class="nav-link "><a href="gallery.html"><p class="text-warning h5 px-3 navs">Gallery</p></a></li>
+                <li class="nav-link "><a href="curricula.html"><p class="text-warning h5 px-3 navs">Co-curricular Activities</p></a></li>
+                <li class="nav-link "><a href="about.html"><p class="text-warning h5 px-3 navs">About</p></a></li>
+                <li class="nav-link "><a href="contacts.html"><p class="text-warning h5 navs">Contacts</p></a></li>
             </ul>
         </div>  
     </nav>
@@ -57,19 +68,20 @@
             text-decoration: underline;
         }
     </style>
+        <div class="border-bottom border-blue-500 mx-5  my-3 py-0 border-10"></div>
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
             <!-- Button 1 -->
-            <button class="btn btn-primary" onclick="displayContent('Button 1 Content', 'button1')" id="button1">Mission</button>
+            <button class="btn btn-primary text-danger" onclick="displayContent('To educate all students to their fullest potential, preparing them to be successful members of the society', '')" id="button1"><p class="h4">Mission</p></button>
             
             <!-- Button 2 -->
-            <button class="btn btn-primary" onclick="displayContent('Button 2 Content', 'button2')" id="button2">Vision</button>
+            <button class="btn btn-primary" onclick="displayContent('To be a world class learning community where all students thrive and become thoughtful, responsible, and engaged citizens.', '')" id="button2"><p class="h4">Mission</p></button>
         </div>
         <div class="col-md-6">
             <!-- Content Display Div -->
-            <div id="contentDisplay" class="mt-3 style">To educate all students to their fullest potential,
-                preparing them to be successful members of the society</div>
+            <div id="contentDisplay" class="mt-3 style"><p class="h4">To educate all students to their fullest potential,
+                preparing them to be successful members of the society</p></div>
         </div>
     </div>
 </div>
@@ -96,24 +108,6 @@
         }
     }
 </script>
-
-
-    <div class="row mx-5">
-        <div class="col text-dark">
-            <b><p class="h3">Motto</p>
-            <p class="h2">Strife for the best</p>
-            <p class="h3">Slogan</p>
-            <p class="h2">We move...</p></b>
-        </div>
-        <div class="col">
-            <p class="h3">Mission statement</p>
-            <p class="h4">To educate all students to their fullest potential,
-                preparing them to be successful members of the society</p>
-            <p class="h3">Vision statement</p> 
-            <p class="h4">To be a world class learning community where all students thrive and become thoughtful,responsible, and engaged citizens.</p>
-        </div>
-    </div>
-
     <div class="text-warning h2 mx-5">Campus News</div>
     <div class="border-bottom border-blue-500 mx-5 border-10"></div>
     <div class="row mx-5 my-2">
