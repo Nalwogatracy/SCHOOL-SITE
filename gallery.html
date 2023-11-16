@@ -6,6 +6,7 @@
     <title>Gallery page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="row">
@@ -13,30 +14,35 @@
             <img src="logo1.png" alt="" style="width: 150px; height: 150px">
         </div>
         <div class="col bg-primary text-light py-5">
-            <h1><b>St.Bensdorf High School</b></h1>
+            <h2><b>St.Bensdorf High School</b></h2>
         </div>
-        <div class="col bg-primary ">
-            <div class="carousel slide" id="demo" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img style="width: 400px; height: 100px;" src="R (1).jpg" alt="">
-                    </div>
-                    <div style="width: 400px; height: 100px;" class="carousel-item">
-                        <img  src="aaa.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img style="width: 400px; height: 100px;" src="reg1.jpg" alt="">
-
-                    </div>
-
-                </div>
+        <div class="carousel slide" data-bs-ride="carousel" id="demo"bg-primary style="height: 20px;">
+            <div class="carousel-inner">
+                
             </div>
-            
+            <div class="carousel-item active"bg-primary>
+                <p class="text-warning">You're welcome y'all</p>
+    
+            </div>
+            <div class="carousel-item"bg-primary>
+                <p class="text-warning">Registration in progress</p>
+            </div>
+            <div class="carousel-item"bg-primary>
+                <p class="text-warning">Please entrust us with your children</p>
+            </div>
+            <div class="carousel-item"bg-primary>
+                <p class="text-warning">Thank you all !!</p>
+            </div>
+            <div class="carousel-item "bg-primary>
+                <p class="text-warning">May the Lord bless you....</p>
+            </div>
+    
         </div>
+        
         
         
     </div>
-    <div class="bg-primary row container-fluid"><img style="width: 100%;" src="reg.jpg" alt=""></div>
+    <div class="bg-primary row container-fluid"></div>
     <nav class="navbar navbar-expand container-fluid bg-primary shadow">
         <div class="nav-item">
             <ul class="navbar-nav ">
@@ -50,75 +56,123 @@
         </div>  
     </nav>
     <div class="row my-3 mx-3 ">
-        <div class="col ">
-            <img class="rounded" src="st6.jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (1).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (2).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (3).jpg" alt="">
-        </div>
-    
+        <style>
+            div.gallery {
+              margin: 5px;
+              border: 1px solid #ccc;
+              float: left;
+              width: 180px;
+            }
+            
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+            
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+            
+            div.desc {
+              padding: 15px;
+              text-align: center;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div class="gallery">
+              <a target="_blank" href="lab1.jpg">
+                <img src="lab1.jpg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">OUR LAB</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="OIP.jpg">
+                  <img src="OIP.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Class env't</div>
+              </div>
+              <div class="gallery">
+                <a target="_blank" href="cafe.jpg">
+                  <img src="cafe.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">OUR CAFE SERVICES</div>
+              </div>
+              <div class="gallery">
+                <a target="_blank" href="teach.jpg">
+                  <img src="teach.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Qualified teachers</div>
+              </div>
+              <div class="gallery">
+                <a target="_blank" href="dorm.jpg">
+                  <img src="dorm.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">The Hostels</div>
+              </div>
+
 
     </div>
-    <div class="row my-3 mx-3 ">
-        <div class="col ">
-            <img class="rounded" src="st6.jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (1).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (2).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (3).jpg" alt="">
-        </div>
+    <div class="container">
+		<header class="main-header clearfix">
+		<h1 class="name">3DTransform <span>Gallery</span></h1>
+		</header>
+
+		<div class="content clearfix">
+
+			<div class="cube-container">
+				<div class="photo-cube">
+
+					<img class="front"src="sch6.jpg" alt="">
+					<div class="back photo-desc">
+					  <h3>Let's fight ignorance together</h3>
+					  <p>The greatest enemy we have in Africa is ignorance that's why St.Bensdoff has decided to come up with a diffferent way of fighting it.</p>
+						<a href="#" class="button">download</a>
+					</div>
+					<img class="left" src="sch1.jpg" alt="">
+					<img class="right" src="OIP (4).jpg" alt="">
+
+				</div>
+			</div>	
+
+			<div class="cube-container">
+				<div class="photo-cube">
+
+					<img class="front" src="sch2.jpg" alt="">
+					<div class="back photo-desc">
+					  <h3>Our Home Base</h3>
+					  <p>We provide a good and comfortable home for our children where they are free to socialise with each other.</p>
+						<a href="https://www.bing.com/search?pglt=43&q=download+chrome&cvid=016ca50fa8d8478aa1402ebeada53bca&gs_lcrp=EgZjaHJvbWUqBggEEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxBFGD0yBggIEEUYPdIBCTEyNjMwajBqMagCALACAA&FORM=ANNTA1&PC=U531" class="button">download</a>
+					</div>
+					<img class="left" src="sch4.jpg" alt="">
+					<img class="right" src="sch6.jpg" alt="">
+
+				</div>
+			</div>	
+
+			<div class="cube-container">
+				<div class="photo-cube">
+
+					<img class="front" src="uce2.jpg" alt="">
+					<div class="back photo-desc">
+					  <h3>The UNEB </h3>
+					  <p>Our students sit for UNEB well prepared by the experienced teachers and thus come up with good results therefore securing themselves a brighter future.</p>
+						<a href="https://www.bing.com/search?pglt=43&q=download+chrome&cvid=016ca50fa8d8478aa1402ebeada53bca&gs_lcrp=EgZjaHJvbWUqBggEEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxBFGD0yBggIEEUYPdIBCTEyNjMwajBqMagCALACAA&FORM=ANNTA1&PC=U531" class="button">download</a>
+					</div>
+					<img class="left" src="sch3.jpg" alt="">
+                    <p>Knowledge is all that we can provide as a gift to our dear students</p>
+					<img class="right" src="sch5.png" alt="">
+                    <p>Our students happiness is our pride,let's all enjoy this education with a smile on our faces</p>
+
+				</div>
+			</div>	
+
+		</div>
+	</div>
     
 
-    </div>
-
-    <div class="row my-3 mx-3 ">
-        <div class="col ">
-            <img class="rounded" src="st6.jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (1).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (2).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (3).jpg" alt="">
-        </div>
-    
-
-    </div>
-    <div class="row my-3 mx-3 ">
-        <div class="col ">
-            <img class="rounded" src="st6.jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (1).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (2).jpg" alt="">
-        </div>
-        <div class="col">
-            <img class="rounded" src="OIP (3).jpg" alt="">
-        </div>
-    
-
-    </div>
-
-
-
-
-    <div class="row bg-dark text-light container-xxl p-2">
+   <div class="row bg-dark text-light container-xxl p-2">
         <div class="col">
             <p> <img style="width: 30px; height: 30px;" src="what.png" alt=""> 0741007182</p>
         </div>
@@ -135,5 +189,8 @@
             <p><img style="width: 30px; height: 30px;" src="face.png" alt=""> St.Bensdorf High school</p>
         </div>
     </div>
+    
+  
+        
 </body>
 </html>
